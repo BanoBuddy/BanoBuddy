@@ -18,19 +18,20 @@ The following is **optional** functionality:
 - [ ] User can visualize bathrooms on a map view
 - [ ] Users can edit bathroom
     - [ ] Users can upload a picture of the facilities
-    - [ ] Users can 
+    - [ ] Users can submit edits to bathrooms (corrections, rennovations)
 - [ ] User can leave comments about their bathroom experience
 - [ ] User can edit the range of their search
-- [ ] 
 
-The following is **additional** functionality:
+The following is **super optional** functionality:
 
-- [ ] 
-- [ ] 
+- [ ] Users can reply to other users' comments
+- [ ] Users can select a "Favorite Bathroom"
+    - [ ] Users can receive notifications concerning their favorite bathroom
+- [ ] Google Maps incorporation (closest route to nearest bathroom)
 
 UI Optionals:
-- [ ]
-- [ ] 
+- [ ] Color code bathrooms based on ratings (high rating is blue, low rating is red)
+- [ ] "Flushing" animation
 
 ## Notes
 
