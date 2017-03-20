@@ -12,9 +12,11 @@
 		4EBD910F1E67882500BBD2B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBD910D1E67882500BBD2B1 /* Main.storyboard */; };
 		4EBD91111E67882500BBD2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBD91101E67882500BBD2B1 /* Assets.xcassets */; };
 		4EBD91141E67882500BBD2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBD91121E67882500BBD2B1 /* LaunchScreen.storyboard */; };
+		5951BE17A537CD011F5DB444 /* Pods_BanoBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7D32C10A4464D9461067DD /* Pods_BanoBuddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41793F0CB733BF5431F183E8 /* Pods-BanoBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanoBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-BanoBuddy/Pods-BanoBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		4EBD91061E67882500BBD2B1 /* BanoBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanoBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBD91091E67882500BBD2B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EBD910B1E67882500BBD2B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4EBD91101E67882500BBD2B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EBD91131E67882500BBD2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EBD91151E67882500BBD2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D7D32C10A4464D9461067DD /* Pods_BanoBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanoBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0183A751C3FE8ED7CC1ED5A /* Pods-BanoBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanoBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BanoBuddy/Pods-BanoBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5951BE17A537CD011F5DB444 /* Pods_BanoBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				4EBD91081E67882500BBD2B1 /* BanoBuddy */,
 				4EBD91071E67882500BBD2B1 /* Products */,
+				CEF6D7528408BF051BF654E1 /* Pods */,
+				50EC800F0CFBBDF3B38192C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = BanoBuddy;
 			sourceTree = "<group>";
 		};
+		50EC800F0CFBBDF3B38192C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D32C10A4464D9461067DD /* Pods_BanoBuddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF6D7528408BF051BF654E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0183A751C3FE8ED7CC1ED5A /* Pods-BanoBuddy.debug.xcconfig */,
+				41793F0CB733BF5431F183E8 /* Pods-BanoBuddy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EBD91181E67882500BBD2B1 /* Build configuration list for PBXNativeTarget "BanoBuddy" */;
 			buildPhases = (
+				FEFBE9798AA84F1B7E71582C /* [CP] Check Pods Manifest.lock */,
 				4EBD91021E67882400BBD2B1 /* Sources */,
 				4EBD91031E67882400BBD2B1 /* Frameworks */,
 				4EBD91041E67882400BBD2B1 /* Resources */,
+				6E1675270DEA5DBA83034E5D /* [CP] Embed Pods Frameworks */,
+				1B14B2A3AB7B707198E825BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B14B2A3AB7B707198E825BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BanoBuddy/Pods-BanoBuddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E1675270DEA5DBA83034E5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BanoBuddy/Pods-BanoBuddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEFBE9798AA84F1B7E71582C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EBD91021E67882400BBD2B1 /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		4EBD91191E67882500BBD2B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0183A751C3FE8ED7CC1ED5A /* Pods-BanoBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BanoBuddy/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		4EBD911A1E67882500BBD2B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41793F0CB733BF5431F183E8 /* Pods-BanoBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BanoBuddy/Info.plist;
