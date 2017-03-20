@@ -35,7 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // check if user is logged in.
         if PFUser.current() != nil {
         }   else    {
-            
+            let vc = storyboard.instantiateInitialViewController()
+            window?.rootViewController = vc
         }
         return true
     }
