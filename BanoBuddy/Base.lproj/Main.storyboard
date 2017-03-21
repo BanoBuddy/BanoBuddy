@@ -84,5 +84,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="lBN-iA-yYY">
+            <objects>
+                <viewController storyboardIdentifier="MapView" id="ubz-x4-edU" customClass="MapViewController" customModule="BanoBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0K7-43-bWv"/>
+                        <viewControllerLayoutGuide type="bottom" id="yV5-aK-NZ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RGU-tL-LOn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NWd-fz-zZ5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NWd-fz-zZ5" firstAttribute="leading" secondItem="RGU-tL-LOn" secondAttribute="leading" id="COa-Nf-yVW"/>
+                            <constraint firstAttribute="trailing" secondItem="NWd-fz-zZ5" secondAttribute="trailing" id="R7j-re-OjJ"/>
+                            <constraint firstItem="NWd-fz-zZ5" firstAttribute="top" secondItem="RGU-tL-LOn" secondAttribute="top" id="jaK-XX-R1u"/>
+                            <constraint firstItem="yV5-aK-NZ4" firstAttribute="top" secondItem="NWd-fz-zZ5" secondAttribute="bottom" id="yJi-ic-w31"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="NWd-fz-zZ5" id="HKn-pe-VtI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhZ-s0-PVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="47.226386806596707"/>
+        </scene>
     </scenes>
 </document>
