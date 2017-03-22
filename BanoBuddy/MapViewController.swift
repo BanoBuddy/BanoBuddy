@@ -28,6 +28,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             let gainesvilleRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(29.651634, -82.324826),MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
             self.map.setRegion(gainesvilleRegion, animated: true)
 //        }
+        
+        pinBathroom(latitude: 29.64, longitude: -82.2)
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,11 +52,30 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         annotation.title = String(describing: latitude)
         self.map.addAnnotation(annotation)
         self.map.delegate = self
+        
+        centerOnPin(annotation: annotation)
     }
     
     func findClosestBathroom()  {
         
     }
+    
+    func centerOnPin(annotation: MKPointAnnotation)  {
+        var track = CLLocationCoordinate2D()
+        track.latitude = annotation.coordinate.latitude
+        track.longitude = annotation.coordinate.longitude
+        
+        var region = MKCoordinateRegion()
+        var span = MKCoordinateSpan()
+        span.latitudeDelta = 0.1
+        span.longitudeDelta = 0.1
+        region.span = span
+        region.center = track
+        
+        self.map.setRegion(region, animated: true)
+        self.map.regionThatFits(region)
+    }
+
 
     /*
     // MARK: - Navigation
