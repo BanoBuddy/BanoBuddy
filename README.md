@@ -6,8 +6,8 @@ An application to give people crowd-sourced reviews of nearby bathrooms.
 
 The following is **required** functionality:
 
-- [ ] User can see bathrooms nearby
-- [ ] User can submit a bathroom
+- [X] User can see bathrooms nearby
+- [X] User can submit a bathroom
     - [ ] User can rate a bathroom based on: overall, cleanliness, tp, traffic, sinks, soap, graffiti/ambiance, accessibility, etc...
     - [ ] Users mark attributes: men/women/family/unisex, changing stations, auto-flush(fancy), auto-sinks, etc...
 - [ ] User can filter bathrooms based on attributes and rating
@@ -15,7 +15,7 @@ The following is **required** functionality:
 
 The following is **optional** functionality:
 
-- [ ] User can visualize bathrooms on a map view
+- [X] User can visualize bathrooms on a map view
 - [ ] Users can edit bathroom
     - [ ] Users can upload a picture of the facilities
     - [ ] Users can submit edits to bathrooms (corrections, rennovations)
