@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4E66066B1E80985A00D6FA94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E66066A1E80985A00D6FA94 /* LoginViewController.swift */; };
 		4E66066D1E809B5F00D6FA94 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E66066C1E809B5F00D6FA94 /* MapViewController.swift */; };
+		4E7C0ED41E836F40008685FA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7C0ED31E836F40008685FA /* HomeViewController.swift */; };
+		4E7C0ED61E836F68008685FA /* BathroomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7C0ED51E836F68008685FA /* BathroomCell.swift */; };
 		4EBD910A1E67882500BBD2B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD91091E67882500BBD2B1 /* AppDelegate.swift */; };
 		4EBD910F1E67882500BBD2B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBD910D1E67882500BBD2B1 /* Main.storyboard */; };
 		4EBD91111E67882500BBD2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBD91101E67882500BBD2B1 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 		41793F0CB733BF5431F183E8 /* Pods-BanoBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanoBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-BanoBuddy/Pods-BanoBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		4E66066A1E80985A00D6FA94 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4E66066C1E809B5F00D6FA94 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4E7C0ED31E836F40008685FA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4E7C0ED51E836F68008685FA /* BathroomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomCell.swift; sourceTree = "<group>"; };
 		4EBD91061E67882500BBD2B1 /* BanoBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanoBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBD91091E67882500BBD2B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EBD910E1E67882500BBD2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				4EBD91121E67882500BBD2B1 /* LaunchScreen.storyboard */,
 				4EBD91151E67882500BBD2B1 /* Info.plist */,
 				4E66066C1E809B5F00D6FA94 /* MapViewController.swift */,
+				4E7C0ED31E836F40008685FA /* HomeViewController.swift */,
+				4E7C0ED51E836F68008685FA /* BathroomCell.swift */,
 			);
 			path = BanoBuddy;
 			sourceTree = "<group>";
@@ -216,7 +222,9 @@
 			files = (
 				4E66066B1E80985A00D6FA94 /* LoginViewController.swift in Sources */,
 				4EBD910A1E67882500BBD2B1 /* AppDelegate.swift in Sources */,
+				4E7C0ED61E836F68008685FA /* BathroomCell.swift in Sources */,
 				4E66066D1E809B5F00D6FA94 /* MapViewController.swift in Sources */,
+				4E7C0ED41E836F40008685FA /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

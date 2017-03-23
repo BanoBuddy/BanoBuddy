@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
             PFUser.logInWithUsername(inBackground: username!, password: password!) { (user: PFUser?, error: Error?) in
                 if(user != nil)  {
                     self.emptyFields()
+                    self.performSegue(withIdentifier: "mapSegue", sender: self)
                 }   else    {
                     print(error?.localizedDescription as Any)
                 }
@@ -59,6 +60,7 @@ class LoginViewController: UIViewController {
             newUser.signUpInBackground { (success: Bool, error: Error?) in
                 if(success) {
                     self.emptyFields()
+                    self.performSegue(withIdentifier: "mapSegue", sender: self)
                 }   else    {
                     print(error?.localizedDescription as Any)
                 }

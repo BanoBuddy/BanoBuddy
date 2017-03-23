@@ -29,7 +29,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             self.map.setRegion(gainesvilleRegion, animated: true)
 //        }
         
-        pinBathroom(latitude: 29.64, longitude: -82.2)
+        pinBathroom(latitude: 29.648178, longitude: -82.345767)
     }
 
     override func didReceiveMemoryWarning() {

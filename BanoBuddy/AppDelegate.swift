@@ -28,17 +28,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             with: ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
                 configuration.applicationId = "ban-obuddy.BanoBuddy"
                 configuration.clientKey = "alsfjdaslfhdkajlsfhsadjklfhadskljfhdsal"
-                configuration.server = "http://banobuddy.herokuapp.com/parse"
+                configuration.server = "https://banobuddy.herokuapp.com/parse"
             })
         )
         
         // check if user is logged in.
         if PFUser.current() != nil {
-        }   else    {
-            //let vc = storyboard.instantiateInitialViewController()
             let vc = storyboard.instantiateViewController(withIdentifier: "MapView")
             window?.rootViewController = vc
         }
+        else    {
+            let vc = storyboard.instantiateInitialViewController()!
+            window?.rootViewController = vc
+        }
+        
         return true
     }
 
